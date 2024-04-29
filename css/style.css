@@ -1,0 +1,307 @@
+*
+{
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*Home Page Style*/
+.sections
+{
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+}
+nav
+{
+    background-color: rgba(34, 29, 29,0.8);
+    border-bottom: 3px solid rgb(255, 196, 0);
+    position: fixed !important;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 111;
+}
+.logo
+{
+    width: 30px; 
+    height: 30px;
+}
+.links
+{
+    margin-left: 37%;
+}
+.links ul a:hover
+{
+    color: rgb(255, 196, 0) !important;
+}
+.welcome
+{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/welcome.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+#slogan
+{
+    width: 40%;
+    height: 45%;
+    position: absolute;
+    top: 15%;
+    left: 4%;
+}
+#slogan h1
+{
+    color: white;
+    overflow: hidden;
+}
+#slogan p
+{
+    color:  rgb(255, 196, 0);
+}
+#pageTitle
+{
+    position: absolute;
+    left: 57%;
+    top: 49%;
+    z-index: 11;
+}
+#pageTitle h3
+{
+    overflow: hidden;
+    color:rgb(255, 196, 0);
+}
+#pageTitle p
+{
+    color: white;
+}
+#aboutImg
+{
+
+    width: 40vw;
+    margin: auto;
+}
+#aboutImg img
+{
+    width: 80%;
+    height: 80%;
+    border-radius: 20px;
+}
+#aboutContent
+{
+    overflow: hidden;
+    margin: auto;
+    width: 60vw;
+    padding: 4%;
+}
+.category
+{
+    cursor: pointer;
+}
+.category .card
+{
+    width: 18rem;
+    height: 26.5rem;
+}
+.category .card :hover
+{
+    background-color: rgb(228, 228, 228);
+}
+#contact
+{
+    height: 100vh;
+}
+#contactTop
+{
+    height: 85%;
+}
+.conatctHeader
+{
+    height: 10vh;
+}
+.contactInfo
+{
+    width: 45%;
+    height: 40%;
+    display: inline-block;
+    margin: auto;
+    margin-top: 10%;
+}
+.mailing
+{
+    width: 45%;
+    height: 40%;
+    display: inline-block;
+    margin: auto;
+    margin-top: 10%;
+}
+.contactInfo a:hover
+{
+    color: rgb(255, 196, 0) !important; 
+}
+footer
+{
+    background-color: rgba(34, 29, 29,0.8); 
+    height: 15%;
+}
+.footerPara
+{
+    text-align: center;
+}
+.socialLinks
+{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.socialLinks a:hover
+{
+    color: white !important;
+}
+@media screen and (max-width:600px)
+{
+    .links
+    {
+        margin-left:0 !important;
+    }
+    .welcome
+    {
+        position:unset;
+    }
+    #slogan
+    {
+        padding: 2%;
+        margin-top: 25%;
+        position: unset;
+        width: 100%;
+        height: 35%;
+        display: block;
+    }
+    #pageTitle
+    {
+        padding: 2%;
+        position: unset;
+        width: 100%;
+        height: 35%;
+        display: block;
+    }
+    #about
+    {
+        width: auto;
+    }
+    #aboutImg
+    {
+        width: 100vw;
+    }
+    #aboutContent
+    {
+        width: 100vw;
+    }
+    #services
+    {
+        height: auto;
+    }
+    #products
+    {
+        height: auto;
+        text-align: center !important;
+        margin: auto !important;
+    }
+    #contact
+    {
+        height: auto;
+    }
+    #contactTop
+    {
+        height: 85%;
+    }
+    .mailing
+    {
+        width: 100%;
+        height: 40%;
+        padding: 2%;
+    }
+    .contactInfo
+    {
+        width: 100%;
+        height: 40%;
+        text-align: start;
+    }
+    footer
+    {
+        height: 15%;
+    }
+
+}
+@media (max-height:600px)
+{
+    #pageTitle
+    {
+        top: 15%;
+    }
+}
+/*Register and Login Page*/
+.formsBack
+{
+    width: 100vw;
+    height: 100vh;
+    background:linear-gradient(to bottom right, #000000 0%, #27282a 100%);
+}
+.formArea
+{
+    width: 50%;
+    height: auto;
+    margin: auto;
+}
+.formsBack h2
+{
+    height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(255, 196, 0);
+}
+.formsBack form
+{
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    background: unset;
+    border:2px solid rgb(255, 196, 0) !important;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: #20202081;
+    box-shadow: 0 2px 6px 0 rgb(255, 196, 0), 0 4px 10px 0 rgb(255, 196, 0);
+}
+.formsBack form input , label
+{
+    background-color: unset !important;
+    outline: none !important;
+    color: white !important;
+}
+
+/* Admin Page */
+table
+{
+    border: 3px solid rgb(255, 196, 0);
+}
+table td
+{
+    padding: 2rem;
+    border: 3px solid rgb(255, 196, 0);
+}
+table th
+{
+    padding: 2rem;
+    background-color: rgb(255, 196, 0);
+    color: rgb(34, 29, 29);
+    border: 3px solid rgb(34, 29, 29);
+}
+@media screen and (max-width:700px)
+{
+.formArea
+{
+    width: 100%;
+    height: 70%;
+}
+}
